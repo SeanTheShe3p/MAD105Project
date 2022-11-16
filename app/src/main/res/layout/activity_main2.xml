@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main2Activity">
+
+    <TextView
+        android:id="@+id/textShoppingTitle"
+        android:layout_width="151dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="@string/txtShoppingTitle"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/SpnShop"
+        android:layout_width="361dp"
+        android:layout_height="55dp"
+        android:entries="@array/arrShopItems"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup4"
+        app:layout_constraintVertical_bias="0.149" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup4"
+        android:layout_width="197dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgShopping">
+
+        <RadioButton
+            android:id="@+id/radBtnAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rdBtnAddList" />
+
+        <RadioButton
+            android:id="@+id/radBtnSub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rdBtnSubList" />
+
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/imgShopping"
+        android:layout_width="195dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="36dp"
+        android:contentDescription="a shopping bag"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textShoppingTitle"
+        app:srcCompat="@drawable/grocerybag" />
+
+    <Button
+        android:id="@+id/btnShopConfirm"
+        android:layout_width="210dp"
+        android:layout_height="71dp"
+        android:layout_marginBottom="52dp"
+        android:text="@string/txtBtnShopConfirm"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SpnShop"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

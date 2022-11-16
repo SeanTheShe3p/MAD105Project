@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">MAD105Project</string>
+
+    <string name="txtTitle">Life Planer</string>
+
+    <string name="txtQues1">Is today a weekend?</string>
+    <string name="txtQues2">Do you have chores to do?</string>
+    <string name="txtQues3">When Did you last see your friends?</string>
+
+    <string name="rdBtn1_1">yes!</string>
+    <string name="rdBtn1_2">no.</string>
+    <string name="rdBtn2_1">yes!</string>
+    <string name="rdBtn2_2">no.</string>
+    <string name="rdBtn3_1">It has been a while..</string>
+    <string name="rdBtn3_2">Yesterday, of course!</string>
+
+    <string name="txtBtnSchedule">Schedule</string>
+
+
+    <string name="txtScheduleResults1">Answers 1,1,1</string>
+    <string name="txtScheduleResults2">Answers 1,1,2</string>
+    <string name="txtScheduleResults3">Answers 1,2,1</string>
+    <string name="txtScheduleResults4">Answers 1,2,2</string>
+    <string name="txtScheduleResults5">Answers 2,1,1</string>
+    <string name="txtScheduleResults6">Answers 2,1,2</string>
+    <string name="txtScheduleResults7">Answers 2,2,1</string>
+    <string name="txtScheduleResults8">Answers 2,2,2</string>
+    <string name="txtScheduleResults0">Answers 0,0,0</string>
+
+
+    <string name="txtShoppingTitle">Shopping List</string>
+    <string-array name="arrShopItems">
+        <item>Milk</item><item>Eggs</item><item>Cheese</item>
+        <item>Bread</item><item>Chips</item><item>Soda</item>
+        <item>Meat</item><item>Pasta</item><item>Seasoning</item>
+        <item>Paper Products</item><item>Toiletries</item><item>Detergent</item>
+    </string-array>
+
+    <string name="rdBtnAddList">Add Item</string>
+    <string name="rdBtnSubList">Subtract Item</string>
+
+    <string name="txtBtnShopConfirm">Confirm?</string>
+
+    <string name="txtShoppingOpen">Open Shopping List</string>
+
+</resources>

@@ -45,22 +45,22 @@ class Main1Activity : AppCompatActivity() {
 
         btnSchedule.setOnClickListener {
             if (radBtn1.isChecked) {
-                ans1 == 1
+                ans1 = 1
             }
             if (radBtn2.isChecked) {
-                ans1 == 2
+                ans1 = 2
             }
             if (radBtn3.isChecked) {
-                ans2 == 1
+                ans2 = 1
             }
             if (radBtn4.isChecked) {
-                ans2 == 2
+                ans2 = 2
             }
             if (radBtn5.isChecked) {
-                ans3 == 1
+                ans3 = 1
             }
             if (radBtn6.isChecked) {
-                ans3 == 2
+                ans3 = 2
             }
             fun checkAnswer(ans1: Int, ans2: Int, ans3: Int): ScheduleAnswer {
                 if (ans1==1&&ans2==1&&ans3==1)
@@ -88,30 +88,30 @@ class Main1Activity : AppCompatActivity() {
 
                 when (checkAnswer(ans1, ans2, ans3)) {
                     ScheduleAnswer.dayPlan1 -> {
-                        Toast.makeText(applicationContext, "1,1,1", Toast.LENGTH_LONG).show()
+                        Toast.makeText(this, "1,1,1", Toast.LENGTH_LONG).show()
                     }
                     ScheduleAnswer.dayPlan2 -> {
-                        Toast.makeText(applicationContext, "1,1,2", Toast.LENGTH_LONG).show()
+                        Toast.makeText(this, "1,1,2", Toast.LENGTH_LONG).show()
                     }
                     ScheduleAnswer.dayPlan3 -> {
-                        Toast.makeText(applicationContext, "1,2,1", Toast.LENGTH_LONG).show()
+                        Toast.makeText(this, "1,2,1", Toast.LENGTH_LONG).show()
                     }
                     ScheduleAnswer.dayPlan4 -> {
-                        Toast.makeText(applicationContext, "1,2,2", Toast.LENGTH_LONG).show()
+                        Toast.makeText(this, "1,2,2", Toast.LENGTH_LONG).show()
                     }
                     ScheduleAnswer.dayPlan5 -> {
-                        Toast.makeText(applicationContext, "2,1,1", Toast.LENGTH_LONG).show()
+                        Toast.makeText(this, "2,1,1", Toast.LENGTH_LONG).show()
                     }
                     ScheduleAnswer.dayPlan6 -> {
-                        Toast.makeText(applicationContext, "2,1,2", Toast.LENGTH_LONG).show()
+                        Toast.makeText(this, "2,1,2", Toast.LENGTH_LONG).show()
                     }
                     ScheduleAnswer.dayPlan7 -> {
-                        Toast.makeText(applicationContext, "2,2,1", Toast.LENGTH_LONG).show()
+                        Toast.makeText(this, "2,2,1", Toast.LENGTH_LONG).show()
                     }
                     ScheduleAnswer.dayPlan8 -> {
-                        Toast.makeText(applicationContext, "2,2,2", Toast.LENGTH_LONG).show()
+                        Toast.makeText(this, "2,2,2", Toast.LENGTH_LONG).show()
                     }
-                    else -> Toast.makeText(applicationContext, "Try again", Toast.LENGTH_LONG)
+                    else -> Toast.makeText(this, "Try again", Toast.LENGTH_LONG)
                         .show()
                 }
             }

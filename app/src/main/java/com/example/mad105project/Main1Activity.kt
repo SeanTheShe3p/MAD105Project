@@ -63,27 +63,23 @@ class Main1Activity : AppCompatActivity() {
                 ans3 = 2
             }
             fun checkAnswer(ans1: Int, ans2: Int, ans3: Int): ScheduleAnswer {
-                if (ans1==1&&ans2==1&&ans3==1)
-                    return ScheduleAnswer.dayPlan1
-                else
-                    return ScheduleAnswer.dayPlan0
-//                when (ans1 == 1 && ans2 == 1 && ans3 == 1)(
-//                    return ScheduleAnswer.dayPlan1}
-//                when (ans1 == 2 && ans2 == 1 && ans3 == 1){
-//                    return ScheduleAnswer.dayPlan2}
-//                when (ans1 == 1 && ans2 == 2 && ans3 == 1){
-//                    return ScheduleAnswer.dayPlan2}
-//                when (ans1 == 2 && ans2 == 2 && ans3 == 1){
-//                    return ScheduleAnswer.dayPlan2}
-//                when (ans1 == 1 && ans2 == 1 && ans3 == 2){
-//                    return ScheduleAnswer.dayPlan2}
-//                when (ans1 == 2 && ans2 == 1 && ans3 == 2){
-//                    return ScheduleAnswer.dayPlan2}
-//                when (ans1 == 1 && ans2 == 2 && ans3 == 2){
-//                    return ScheduleAnswer.dayPlan2}
-//                when (ans1 == 2 && ans2 == 2 && ans3 == 2){
-//                    return ScheduleAnswer.dayPlan2}
-//                else ScheduleAnswer.dayPlan0
+                if (ans1 == 1 && ans2 == 1 && ans3 == 1){
+                    return ScheduleAnswer.dayPlan1}
+                if (ans1 == 2 && ans2 == 1 && ans3 == 1){
+                    return ScheduleAnswer.dayPlan2}
+                if (ans1 == 1 && ans2 == 2 && ans3 == 1){
+                    return ScheduleAnswer.dayPlan3}
+                if (ans1 == 2 && ans2 == 2 && ans3 == 1){
+                    return ScheduleAnswer.dayPlan4}
+                if (ans1 == 1 && ans2 == 1 && ans3 == 2){
+                    return ScheduleAnswer.dayPlan5}
+                if (ans1 == 2 && ans2 == 1 && ans3 == 2){
+                    return ScheduleAnswer.dayPlan6}
+                if (ans1 == 1 && ans2 == 2 && ans3 == 2){
+                    return ScheduleAnswer.dayPlan7}
+                if (ans1 == 2 && ans2 == 2 && ans3 == 2){
+                    return ScheduleAnswer.dayPlan8}
+                else return ScheduleAnswer.dayPlan0
             }
 
                 when (checkAnswer(ans1, ans2, ans3)) {

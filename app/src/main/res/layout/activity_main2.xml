@@ -7,10 +7,10 @@
     tools:context=".Main2Activity">
 
     <TextView
-        android:id="@+id/textShoppingTitle"
+        android:id="@+id/textContactsList"
         android:layout_width="151dp"
         android:layout_height="42dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="16dp"
         android:gravity="center"
         android:text="@string/txtShoppingTitle"
         android:textSize="20sp"
@@ -56,12 +56,12 @@
         android:id="@+id/imgShopping"
         android:layout_width="195dp"
         android:layout_height="200dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="54dp"
         android:contentDescription="a shopping bag"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textShoppingTitle"
+        app:layout_constraintTop_toBottomOf="@+id/textContactsList"
         app:srcCompat="@drawable/grocerybag" />
 
     <Button
@@ -69,11 +69,21 @@
         android:layout_width="210dp"
         android:layout_height="71dp"
         android:layout_marginBottom="52dp"
-        android:text="@string/txtBtnShopConfirm"
+        android:text="@string/txtShopConfirm"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/SpnShop"
         app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnOpenContacts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtOpenContacts"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnShopConfirm" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

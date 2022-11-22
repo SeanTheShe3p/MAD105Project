@@ -1,5 +1,6 @@
 package com.example.mad105project
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -20,8 +21,9 @@ class Main2Activity : AppCompatActivity() {
 
         var spnGroceries = findViewById<Spinner>(R.id.SpnShop)
         var showList = findViewById<Button>(R.id.btnShopConfirm)
+        var openContacts = findViewById<Button>(R.id.btnOpenContacts)
 
-        var groceryItems = arrayListOf<String>("")
+        var groceryItems = arrayListOf<String>()
 
         showList.setOnClickListener{
             if (rdBtnAdd.isChecked){
@@ -35,7 +37,10 @@ class Main2Activity : AppCompatActivity() {
                 groceryItems -= subItem
                 //Toast.makeText(applicationContext,groceryItems,Toast.LENGTH_LONG).show()
             } else Toast.makeText(applicationContext,"err",Toast.LENGTH_LONG).show()
-
+        }
+        openContacts.setOnClickListener{
+            val intentContactList = Intent(this,Main3Activity::class.java)
+            startActivity(intentContactList)
         }
 //        fun checkLogin(username:String, password:String):LoginSuccess {
 //            val holdUsername = "Dave"

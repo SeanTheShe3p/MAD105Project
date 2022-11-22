@@ -30,17 +30,40 @@
 
     <string name="txtShoppingTitle">Shopping List</string>
     <string-array name="arrShopItems">
-        <item>Milk</item><item>Eggs</item><item>Cheese</item>
-        <item>Bread</item><item>Chips</item><item>Soda</item>
-        <item>Meat</item><item>Pasta</item><item>Seasoning</item>
-        <item>Paper Products</item><item>Toiletries</item><item>Detergent</item>
+        <item>Milk</item>
+        <item>Eggs</item>
+        <item>Cheese</item>
+        <item>Bread</item>
+        <item>Chips</item>
+        <item>Soda</item>
+        <item>Meat</item>
+        <item>Pasta</item>
+        <item>Seasoning</item>
+        <item>Paper Products</item>
+        <item>Toiletries</item>
+        <item>Detergent</item>
     </string-array>
 
     <string name="rdBtnAddList">Add Item</string>
     <string name="rdBtnSubList">Subtract Item</string>
 
-    <string name="txtBtnShopConfirm">Confirm?</string>
+    <string name="txtShopConfirm">Confirm</string>
 
     <string name="txtShoppingOpen">Open Shopping List</string>
+    <string name="txtOpenContacts">Open Contacts Page</string>
+
+
+
+    <string name="txtContactList">Contact List</string>
+    <string name="hntName">Name</string>
+    <string name="hntPhone">Phone Number</string>
+    <string name="hntEmail">Email</string>
+    <string name="hntAddress">Address</string>
+    <string name="hntSearch">Search</string>
+
+
+    <string name="txtSaveContact">Save Contact</string>
+    <string name="txtViewContact">View Info</string>
+
 
 </resources>

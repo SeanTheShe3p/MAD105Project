@@ -7,7 +7,7 @@
     tools:context=".Main1Activity">
 
     <TextView
-        android:id="@+id/textShoppingTitle"
+        android:id="@+id/textContactsList"
         android:layout_width="151dp"
         android:layout_height="42dp"
         android:layout_marginTop="16dp"
@@ -27,7 +27,7 @@
         android:text="@string/txtQues1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textShoppingTitle" />
+        app:layout_constraintTop_toBottomOf="@+id/textContactsList" />
 
     <TextView
         android:id="@+id/textQues2"

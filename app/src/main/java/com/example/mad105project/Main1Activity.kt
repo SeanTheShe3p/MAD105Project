@@ -84,30 +84,30 @@ class Main1Activity : AppCompatActivity() {
 
                 when (checkAnswer(ans1, ans2, ans3)) {
                     ScheduleAnswer.dayPlan1 -> {
-                        Toast.makeText(this, "1,1,1", Toast.LENGTH_LONG).show()
+                        Toast.makeText(this, getString(R.string.txtScheduleResults1), Toast.LENGTH_LONG).show()//weekend, chores, needs social
                     }
                     ScheduleAnswer.dayPlan2 -> {
-                        Toast.makeText(this, "1,1,2", Toast.LENGTH_LONG).show()
+                        Toast.makeText(this, getString(R.string.txtScheduleResults2), Toast.LENGTH_LONG).show()//work, chores, needs social
                     }
                     ScheduleAnswer.dayPlan3 -> {
-                        Toast.makeText(this, "1,2,1", Toast.LENGTH_LONG).show()
+                        Toast.makeText(this, getString(R.string.txtScheduleResults3), Toast.LENGTH_LONG).show()//weekend, nothing, need social
                     }
                     ScheduleAnswer.dayPlan4 -> {
-                        Toast.makeText(this, "1,2,2", Toast.LENGTH_LONG).show()
+                        Toast.makeText(this, getString(R.string.txtScheduleResults4), Toast.LENGTH_LONG).show()//work, nothing, need social
                     }
                     ScheduleAnswer.dayPlan5 -> {
-                        Toast.makeText(this, "2,1,1", Toast.LENGTH_LONG).show()
+                        Toast.makeText(this, getString(R.string.txtScheduleResults5), Toast.LENGTH_LONG).show()//weekend, chores, movies and ice cream
                     }
                     ScheduleAnswer.dayPlan6 -> {
-                        Toast.makeText(this, "2,1,2", Toast.LENGTH_LONG).show()
+                        Toast.makeText(this, getString(R.string.txtScheduleResults6), Toast.LENGTH_LONG).show()//work, chores, sleep
                     }
                     ScheduleAnswer.dayPlan7 -> {
-                        Toast.makeText(this, "2,2,1", Toast.LENGTH_LONG).show()
+                        Toast.makeText(this, getString(R.string.txtScheduleResults7), Toast.LENGTH_LONG).show()//weekend, nothing, whatever
                     }
                     ScheduleAnswer.dayPlan8 -> {
-                        Toast.makeText(this, "2,2,2", Toast.LENGTH_LONG).show()
+                        Toast.makeText(this, getString(R.string.txtScheduleResults8), Toast.LENGTH_LONG).show()//work, nothing, eat a good dinner
                     }
-                    else -> Toast.makeText(this, "Try again", Toast.LENGTH_LONG)
+                    else -> Toast.makeText(this, getString(R.string.txtScheduleResults0), Toast.LENGTH_LONG)
                         .show()
                 }
             }

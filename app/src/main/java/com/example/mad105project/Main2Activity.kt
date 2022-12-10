@@ -35,7 +35,8 @@ class Main2Activity : AppCompatActivity() {
             else if (rdBtnSub.isChecked){
                 subItem = spnGroceries.selectedItem.toString()
                 groceryItems -= subItem
-                //Toast.makeText(applicationContext,groceryItems,Toast.LENGTH_LONG).show()
+                var stringGrocery = groceryItems.toString()
+                Toast.makeText(this,stringGrocery,Toast.LENGTH_LONG).show()
             } else Toast.makeText(applicationContext,"err",Toast.LENGTH_LONG).show()
         }
         openContacts.setOnClickListener{

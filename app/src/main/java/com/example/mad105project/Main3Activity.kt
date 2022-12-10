@@ -10,9 +10,8 @@ import org.w3c.dom.Text
 import java.util.jar.Attributes.Name
 
 
-class AddContact constructor(name:String, phone:String, email:String, address:String){
-
-}
+//class AddContact constructor(name:String, phone:String, email:String, address:String){
+//}
 
 class Main3Activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -35,6 +34,7 @@ class Main3Activity : AppCompatActivity() {
             var email = entryEmail.text.toString()
             var address = entryAddress.text.toString()
 
+
             fun checkValidation():Boolean{
                 if (entryName.text.toString().isEmpty()){
                     entryName.error = "Enter a name"
@@ -46,10 +46,23 @@ class Main3Activity : AppCompatActivity() {
                     entryPhone.requestFocus()
                     return false
                 }
+                Toast.makeText(this, "Saved!", Toast.LENGTH_LONG).show()
                     return true
             }
             if (checkValidation()){
-                contactMap.put(name, "Phone:"+phone+"Email:"+email+"Address:"+address)
+                //contactMap.put(name, "Phone:"+phone+"Email:"+email+"Address:"+address)
+                if(email.isBlank() && address.isBlank()){
+                    contactMap.put(name, name + " +" + phone)
+                }
+                if (address.isBlank() && email.isNotBlank()){
+                    contactMap.put(name,  name + " +" + phone + " " + email)
+                }
+                if (email.isBlank() && address.isNotBlank()){
+                    contactMap.put(name,  name + " +" + phone + " " + address)
+                }
+                else {
+                    contactMap.put(name,  name + " +" + phone + " " + email + " " + address)
+                }
             }
         }
 

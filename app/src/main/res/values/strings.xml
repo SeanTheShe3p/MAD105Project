@@ -17,15 +17,15 @@
     <string name="txtBtnSchedule">Schedule</string>
 
 
-    <string name="txtScheduleResults1">Answers 1,1,1</string>
-    <string name="txtScheduleResults2">Answers 1,1,2</string>
-    <string name="txtScheduleResults3">Answers 1,2,1</string>
-    <string name="txtScheduleResults4">Answers 1,2,2</string>
-    <string name="txtScheduleResults5">Answers 2,1,1</string>
-    <string name="txtScheduleResults6">Answers 2,1,2</string>
-    <string name="txtScheduleResults7">Answers 2,2,1</string>
-    <string name="txtScheduleResults8">Answers 2,2,2</string>
-    <string name="txtScheduleResults0">Answers 0,0,0</string>
+    <string name="txtScheduleResults1">Call Mom to go shopping</string>
+    <string name="txtScheduleResults2">hot pockets for dinner, text someone</string>
+    <string name="txtScheduleResults3">PARTY WITH THE FRIENDS!</string>
+    <string name="txtScheduleResults4">Get coffee after work</string>
+    <string name="txtScheduleResults5">Do your chores!</string>
+    <string name="txtScheduleResults6">Work Day!</string>
+    <string name="txtScheduleResults7">Relaxing walk in the woods.</string>
+    <string name="txtScheduleResults8">easy work day.</string>
+    <string name="txtScheduleResults0">Scheduling requires input</string>
 
 
     <string name="txtShoppingTitle">Shopping List</string>
